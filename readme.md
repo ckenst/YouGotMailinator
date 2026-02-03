@@ -1,6 +1,11 @@
-## Password Reset Demo
+## 📬 YouGotMailinator 
+
+> *“You’ve Got Mail (inator)”*
+
+YouGotMailinator is a lightweight demo app that showcases how to test email-based workflows (password resets, magic links, verification emails) using Mailinator.
 
 This is a simple but fully functional password reset demo using Node.js, Express, and Nodemailer.
+
 
 ## Functionality:
 
@@ -27,3 +32,7 @@ GMAIL_PASSWORD=your-app-password
 ```
 
 4. Finally you just run `node server.js` and navigate to `http://localhost:3000` in your browser.
+
+## About
+
+Built for testers. Friendly for developers. Great on video.
