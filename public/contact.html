@@ -2,20 +2,17 @@
 <html>
 
 <body style="font-family: sans-serif; padding: 50px; text-align: center;">
-    <h2>Login</h2>
+    <h2>Contact Us</h2>
     <p id="error-msg" style="color: red; display: none;"></p>
 
-    <form action="/login" method="POST">
-        <input type="text" name="email" placeholder="Email" required><br><br>
-        <input type="password" name="password" placeholder="Password" required><br><br>
-        <button type="submit">Login</button>
+    <form action="/contact" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required><br><br>
+        <input type="email" name="email" placeholder="Your Email" required><br><br>
+        <textarea name="message" placeholder="Your message..." rows="5" cols="40" required></textarea><br><br>
+        <button type="submit">Send Message</button>
     </form>
     <br>
-    <a href="/request-reset.html">Forgot Password?</a>
-    &nbsp;|&nbsp;
-    <a href="/signup.html">Create Account</a>
-    &nbsp;|&nbsp;
-    <a href="/contact.html">Contact Us</a>
+    <a href="/">Back to Login</a>
 
     <script>
         const urlParams = new URLSearchParams(window.location.search);
