@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body style="font-family: sans-serif; padding: 50px; text-align: center; background-color: #e8f5e9;">
+    <h2>Account Created!</h2>
+    <p id="message-msg" style="color: green; font-weight: bold;">
+        Your account has been created. Please check your email for a confirmation link.
+    </p>
+    <br>
+    <a href="/">Go to Login</a>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const email = urlParams.get('email');
+        if (email) {
+            const msg = document.getElementById('message-msg');
+            msg.textContent = `Your account has been created. A confirmation email has been sent to ${email}.`;
+        }
+    </script>
+</body>
+
+</html>
