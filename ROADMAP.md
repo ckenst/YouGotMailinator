@@ -1,0 +1,2 @@
+- [ ] Deploy in GitHub pages
+- [ ] Use a react frontend like Next.js
